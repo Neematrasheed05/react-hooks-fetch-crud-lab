@@ -1,10 +1,28 @@
 import React from "react";
 
-function QuestionList() {
+
+function QuestionList({questions}) {
+  
   return (
     <section>
       <h1>Quiz Questions</h1>
-      <ul>{/* display QuestionItem components here after fetching */}</ul>
+      <ul>
+    {questions && questions.map((question) => (
+      <li key={question.id}>
+        <div>Question: {question.prompt}</div>
+        <div>
+          Answers:
+          <ul>
+            {question.answers.map ((answer, index) => (
+              <li key={index}>{answer}</li>
+            ))}
+          
+          </ul>
+        </div>
+      </li>
+    ))}
+      
+      </ul>
     </section>
   );
 }
