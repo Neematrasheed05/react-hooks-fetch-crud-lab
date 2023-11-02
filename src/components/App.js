@@ -6,22 +6,24 @@ import QuestionList from "./QuestionList";
 function App() {
   const [page, setPage] = useState("List");
   const [questions, setQuestions] = useState([])
-  
-  useEffect(() => {
-    fetch("http://localhost:4000/questions")
-    .then((res) => res.json() )
-    .then ((data) => {setQuestions(data)});
-   
-  }, []);
-  return (
-<main>
-      <AdminNavBar onChangePage={setPage} />
-      {page === "Form" ? <QuestionForm /> : null} {/* Render QuestionForm conditionally */}
-      {questions.length > 0 ? <QuestionList questions={questions} /> : null} {/* Render QuestionList conditionally */}
-    </main>
-  );/*{page === "Form" ? <QuestionForm /> : <QuestionList />}*/}
-   
-    
 
+ 
+  useEffect(()=> {
+    fetch("http://localhost:4000/questions")
+  
+    .then(response => response.json())
+  
+    .then(questions => {setQuestions(questions)})
+    
+  }, []);
+  
+  return (
+    <main>
+      <AdminNavBar onChangePage={setPage} />
+      {page === "Form" ? <QuestionForm /> : null}
+      <QuestionList questions={questions} />
+    </main>
+  );
+}
 
 export default App;

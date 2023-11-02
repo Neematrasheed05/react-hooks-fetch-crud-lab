@@ -1,7 +1,8 @@
-import React from "react";
+import React  from "react";
 
 
 function QuestionList({questions}) {
+ 
   
   return (
     <section>
@@ -19,12 +20,15 @@ function QuestionList({questions}) {
           
           </ul>
         </div>
+        <button>Delete</button>
+        
       </li>
+     
     ))}
       
       </ul>
     </section>
   );
 }
-
-export default QuestionList;
+export default QuestionList
+  
