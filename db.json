@@ -1,17 +1,6 @@
 {
   "questions": [
     {
-      "id": 1,
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "id",
-        "name",
-        "key",
-        "prop"
-      ],
-      "correctIndex": 2
-    },
-    {
       "id": 2,
       "prompt": "A React component is a function that returns ______.",
       "answers": [
@@ -20,7 +9,7 @@
         "props",
         "state"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": 3,
@@ -31,7 +20,7 @@
         "onChange",
         "onForm"
       ],
-      "correctIndex": 0
+      "correctIndex": 3
     },
     {
       "id": 4,
@@ -53,7 +42,7 @@
         "coalescing",
         "destructuring"
       ],
-      "correctIndex": 3
+      "correctIndex": 1
     },
     {
       "id": 6,
@@ -74,7 +63,7 @@
         "javascript file",
         "file"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "id": 7
     },
     {
@@ -263,72 +252,6 @@
       ],
       "correctIndex": 0,
       "id": 24
-    },
-    {
-      "prompt": "what is javascript",
-      "answers": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "correctIndex": 0,
-      "id": 25
-    },
-    {
-      "prompt": "",
-      "answers": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correctIndex": 0,
-      "id": 26
-    },
-    {
-      "prompt": "",
-      "answers": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "correctIndex": 0,
-      "id": 27
-    },
-    {
-      "prompt": "what is my name",
-      "answers": [
-        "neemat",
-        "nesh",
-        "maryam",
-        "kauthar"
-      ],
-      "correctIndex": 0,
-      "id": 28
-    },
-    {
-      "prompt": "what is her name",
-      "answers": [
-        "mary",
-        "jane",
-        "kate",
-        "ashley"
-      ],
-      "correctIndex": 0,
-      "id": 29
-    },
-    {
-      "prompt": "which country won in 2014 football world cup?",
-      "answers": [
-        "brazil",
-        "france",
-        "portugal",
-        "sychelles"
-      ],
-      "correctIndex": 0,
-      "id": 30
     }
   ]
 }

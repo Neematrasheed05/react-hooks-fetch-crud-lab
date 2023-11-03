@@ -16,12 +16,23 @@ function App() {
     .then(questions => {setQuestions(questions)})
     
   }, []);
-  
+ 
+  function handleUpdateItem (updatedItem){
+    const updatedItems = questions.map((question) => {
+      if(question.id === updatedItem.id){
+        return updatedItem
+      }else{
+        return question
+      }
+    })
+    setQuestions(updatedItems)
+    console.log("is correct!", )
+  }
   return (
     <main>
       <AdminNavBar onChangePage={setPage} />
       {page === "Form" ? <QuestionForm /> : null}
-      <QuestionList questions={questions} />
+      <QuestionList questions={questions} setQuestions={setQuestions} onUpdate={handleUpdateItem}/>
     </main>
   );
 }
